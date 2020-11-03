@@ -201,7 +201,8 @@ nav a.active {
 .advantages {
   display: flex;
   justify-content: space-between;
-  letter-spacing: 0.03em;
+  margin: 0px;
+  padding: 0px;
 }
 
 .advantages .advantages-item::before {
@@ -234,8 +235,8 @@ nav a.active {
 }
 
 .advantages-item {
-  max-width: 270px;
   flex-basis: calc(100% / 4 - 30px);
+  max-width: 270px;
 }
 
 .advantages-item:not(:last-child) {
