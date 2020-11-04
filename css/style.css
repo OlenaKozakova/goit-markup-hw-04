@@ -322,8 +322,15 @@ nav a.active {
   padding: 0px;
 }
 
+.social {
+  padding-bottom: 30px;
+  margin-right: 32px;
+  margin-left: 32px;
+}
+
 .social-box {
-  display: block;
+  display: flex;
+  justify-content: center;
 }
 
 .social-link {
@@ -333,6 +340,27 @@ nav a.active {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  background-color: var(--white);
+}
+
+.social-link:not(:last-child) {
+  margin-right: 10px;
+}
+
+.social-link:hover,
+.social-link:focus {
+  background-color: var(--button-bcg-color);
+}
+
+.social-link:hover .social-icon,
+.social-link:focus .social-icon {
+  fill: var(--white);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  fill: var(--icon);
 }
 
 .client {
