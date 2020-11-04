@@ -5,6 +5,7 @@
   --button-bcg-color: #2196f3;
   --dark-bcg: #2f303a;
   --bcg-gray: #f5f4fa;
+  --icon: #afb1b8;
 }
 
 html {
@@ -218,19 +219,19 @@ nav a.active {
   border-radius: 4px;
 }
 
-.icon-1::before {
+.advantages-icon-1::before {
   background-image: url(../images/index/antenna.svg);
 }
 
-.icon-2::before {
+.advantages-icon-2::before {
   background-image: url(../images/index/clock.svg);
 }
 
-.icon-3::before {
+.advantages-icon-3::before {
   background-image: url(../images/index/diagram.svg);
 }
 
-.icon-4::before {
+.advantages-icon-4::before {
   background-image: url(../images/index/astronaut.svg);
 }
 
@@ -312,6 +313,65 @@ nav a.active {
   text-transform: capitalize;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.social-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.social-box {
+  display: block;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+
+.client {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px;
+  padding: 0px;
+}
+
+.client-box {
+  display: block;
+  flex-basis: calc(100% / 6 - 30px);
+}
+
+.linc-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid var(--icon);
+}
+
+.client-box:not(:last-child) {
+  margin-right: 30px;
+}
+
+.icon {
+  fill: var(--icon);
+}
+
+.linc-client:hover,
+.linc-client:focus {
+  border-color: var(--button-bcg-color);
+}
+
+.linc-client:hover .icon,
+.linc-client:focus .icon {
+  fill: var(--button-bcg-color);
 }
 
 .footer {
