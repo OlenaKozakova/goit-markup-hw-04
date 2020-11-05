@@ -162,6 +162,10 @@ nav a.active {
   margin-top: 30px;
 }
 
+.container-filter {
+  padding-top: 94px;
+}
+
 .filter {
   display: flex;
   justify-content: center;
