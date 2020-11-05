@@ -5,7 +5,7 @@
   --button-bcg-color: #2196f3;
   --dark-bcg: #2f303a;
   --bcg-gray: #f5f4fa;
-  --icon: #afb1b8;
+  --icon: #AFB1B8;
 }
 
 html {
@@ -119,11 +119,24 @@ body {
   color: var(--button-bcg-color);
 }
 
+.link:hover .header-icon,
+.link:focus .header-icon {
+  fill: var(--button-bcg-color);
+}
+
+.header-icon {
+  fill: var(--main-color);
+  margin-right: 10px;
+}
+
 nav a.active {
   color: var(--button-bcg-color);
 }
 
 .contact-link {
+  display: flex;
+  align-items: center;
+  justify-content : center;
   color: var(--main-color);
 }
 
@@ -303,6 +316,7 @@ nav a.active {
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  background-color: var(--white);
 }
 
 .team-img {
@@ -358,8 +372,6 @@ nav a.active {
 }
 
 .social-icon {
-  width: 40px;
-  height: 40px;
   fill: var(--icon);
 }
 
@@ -375,7 +387,7 @@ nav a.active {
   flex-basis: calc(100% / 6 - 30px);
 }
 
-.linc-client {
+.link-client {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -392,13 +404,13 @@ nav a.active {
   fill: var(--icon);
 }
 
-.linc-client:hover,
-.linc-client:focus {
+.link-client:hover,
+.link-client:focus {
   border-color: var(--button-bcg-color);
 }
 
-.linc-client:hover .icon,
-.linc-client:focus .icon {
+.link-client:hover .icon,
+.link-client:focus .icon {
   fill: var(--button-bcg-color);
 }
 
@@ -408,7 +420,7 @@ nav a.active {
 }
 
 .footer .logo {
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .logo .logo-white {
@@ -427,6 +439,7 @@ nav a.active {
 
 .addr-container {
   margin-bottom: 60px;
+  margin-top: 60px;
 }
 
 .link-contact:hover,
@@ -440,4 +453,38 @@ nav a.active {
   font-size: 14px;
   line-height: 1.714;
   color: var(--white);
+}
+
+.footer-container {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.footer .text-title {
+  color: var(--white);
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  margin-bottom: 20px;
+}
+
+.footer .social {
+  display: block;
+  width: 206px;
+  height: 80px;
+  margin-top: 72px;
+  padding: 0px;
+}
+.footer .social-icon {
+  fill: var(--white);
+}
+
+.footer .social-link {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+footer .social-link:hover,
+footer .social-link:focus {
+  background-color: var(--button-bcg-color);
 }
